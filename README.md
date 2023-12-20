@@ -2,7 +2,7 @@
 simple Caesar Cipher Cryptography
 
 Caesar help user to encrypt and decrypt any kind of text.
-It supports uppercase, lowercase alphabets, symbols, numbers, spaces.
-Caesar Cipher works by asking the use for a specific value known as "Shift" or "Key".
+It supports uppercase alphabets, lowercase alphabets, symbols, numbers, spaces.
+Caesar Cipher works by asking the user for a specific value known as "Shift"\"Key".
 The value of shift can range from 1 to n.
-If you want someone to decrypt the message, they have to know the shift or key value.
+If you want someone to decrypt the message, they have to know the shift\key value.
