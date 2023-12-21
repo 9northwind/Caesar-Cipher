@@ -1,5 +1,5 @@
 # Caesar-Cipher
-simple Caesar Cipher Cryptography
+Simple Caesar Cipher Cryptography
 
 Caesar help user to encrypt and decrypt any kind of text.
 It supports uppercase alphabets, lowercase alphabets, symbols, numbers, spaces.
