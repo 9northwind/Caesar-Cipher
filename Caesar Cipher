@@ -9,7 +9,7 @@ newspace = ["^", "`"]
 def caesar(x,y,z):
   cipher = ""
   for i in text:
-    if choice == "encrypt":
+    if choice == "encrypt"  or choice == "e":
       if i in upalp:
         loc = upalp.index(i)
         newloc = (loc + z)%26
@@ -35,7 +35,7 @@ def caesar(x,y,z):
           cipher += "^"
         else:
           cipher += "`"
-    elif choice == "decrypt":
+    elif choice == "decrypt" or choice == "d":
       if i in upalp:
         loc = upalp.index(i)
         newloc = (loc - z)%26
@@ -58,17 +58,19 @@ def caesar(x,y,z):
         cipher += newi
       elif i in newspace:
         cipher += " "
-        
-  print(f"The {choice}ed text is:\n{cipher}")
+  if choice == "encrypt"  or choice == "e":
+    print(f"The encryped text is:\n{cipher}")
+  elif choice == "decrypt" or choice == "d":
+    print(f"The decryped text is:\n{cipher}")
 
 while True:
   choice = input('Do you want to encrypt or decrypt:\n').lower()
-  if choice not in ["encrypt", "decrypt"]:
+  if choice not in ["encrypt", "decrypt", "e", "d"]:
     print("Invalid entry")
     continue
   text = input('Enter the text:\n')
   shift = int(input("Enter shift value:\n"))
   caesar(x = choice,y = text,z = shift)
   result = input("Continue?(Yes\\No):\n").lower()
-  if result == "no":
+  if result == "no" or result == "n":
     break
